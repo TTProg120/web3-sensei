@@ -531,6 +531,7 @@ section {
 @media (max-width: 768px) {
   .hero {
     text-align: center;
+    padding: 60px 0 60px 0;
   }
 
   .hero .hero-img img {
@@ -709,7 +710,8 @@ section {
 }
 
 .stake h2{  
-  max-width: 450px;
+  max-width: 418px;
+  letter-spacing: normal;
 }
 
 .stake .span-nomal {
@@ -821,6 +823,10 @@ section {
   padding: 2px 6px;  
 }
 
+.prev-btn{
+  opacity: 0;
+}
+
 .card {  
   margin: 10px;  
 }
@@ -860,6 +866,15 @@ section {
   display: none;
   visibility: hidden;
 }
+
+.card-lg-screen {
+  display: inline-block;
+}
+
+.card-md-screen {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -997,6 +1012,20 @@ section {
     display: block;
     visibility: visible;
   }
+
+  .services .button-box {    
+    top: 53%;    
+  }
+
+  .card-lg-screen {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .card-md-screen {
+    display: inline-block;
+    visibility: visible;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -1019,7 +1048,13 @@ section {
 @media (max-width: 765px){
   section {
     padding: 90px 0;
-  } 
+  }
+  
+  .hero-box {
+    text-align: center;
+    margin: 400px 0 100px 0;
+  }
+
   .chart .chart-box {
     flex-direction: column;
   }
@@ -1047,7 +1082,7 @@ section {
   }
 
   h4 {
-    font-size: 24px;    
+    font-size: 18px;    
   }
  
   .values {    
